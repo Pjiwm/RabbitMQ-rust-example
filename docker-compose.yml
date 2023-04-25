@@ -1,0 +1,16 @@
+name: balldotcom
+version: "1"
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+        #  publisher:
+        # image: rust:lastest
+        #   depends_on:
+        #      - rabbitmq
+    # volumes:
+      # - rabbitmq_data:/var/lib/rabbitmq/
+      # - rabbitmq_log:/var/log/rabbitmq/
